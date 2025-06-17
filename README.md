@@ -1,5 +1,3 @@
-* Netflix-CLone: I make a clone of netflix which helps me improve my skills in the field of Front end development. Initially, I'm really bad at handling all the properties in CSS but now, I become proficient in building something on my own through CSS.
-  
 ASTRO-V: ---------------------------------------------------------->>>>>>>>>
 - My first team project "ASTRO-V" a simple learning platform for people who have keen interest in general knowledge and fun facts which is generated with space theme.
 - Guess what...!!! This project just built entirely based on the HTML and CSS.
