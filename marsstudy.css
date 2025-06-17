@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1c1c1e; 
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(to right, #f54f08, #ef6d6d); 
+  color: #0e0d0d;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+
+.section {
+  background: #f5f5f5;
+  padding: 2rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(255, 140, 0, 0.9);
+}
+.landmark {
+  background-color:  rgba(255,0,0,0.3); 
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #B22222; 
+  border-radius: 6px;
+  color: #040409;
+}
+.Activity {
+  list-style: none;
+  padding-left: 0;
+  background: #444448;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 6px;
+  color: #090909;
+}
+a {
+  color: #090908; 
+  text-decoration:underline; 
+  border: #ff8c00;
+  
+}
+.activity{
+  text-align: center;
+}
+.b{
+  font-size: 20px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  background-color: rgb(24, 186, 32);
+  color: white;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

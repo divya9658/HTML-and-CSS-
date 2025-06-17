@@ -1,0 +1,308 @@
+/* ==== GLOBAL STYLES ==== */
+body {
+    background-image: url(./backmain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ==== NAVIGATION ==== */
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgb(17, 30, 66), rgb(13, 68, 116));
+    padding: 15px;
+}
+
+nav .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    position: relative;
+}
+
+nav .dashboard .child1 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav .dashboard .child2 {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px;
+    z-index: 100;
+}
+
+nav .dashboard .child2 .sub {
+    padding: 5px 10px;
+    background-color: rgb(13, 68, 116);
+    border-radius: 3px;
+}
+
+nav .dashboard .child2 .sub a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .dashboard:hover .child2 {
+    display: block;
+}
+
+nav .dashboard:hover .child2 .sub {
+    border: 1px solid white;
+}
+
+nav .dashboard:hover .child2 .sub:hover {
+    background-color: rgb(43, 145, 186);
+}
+
+nav h2 {
+    margin: 0;
+    font-size: clamp(24px, 5vw, 35px);
+    color: skyblue;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: rgba(208, 208, 249, 0.559);
+    font-size: 1rem;
+}
+
+nav ul li a:active {
+    text-decoration: underline white;
+}
+
+/* ==== TITLE SECTION ==== */
+.Title {
+    background-image: url(./image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    text-align: end;
+    font-size: clamp(40px, 9vw, 150px);
+    max-width: 90vw;
+    padding-right: 250px;
+    position: relative;
+    text-shadow: 0px 0px 8px white;
+    margin-top: 30px;
+}
+
+.matter {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+/* ==== BUTTON ==== */
+div button {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+    padding: 8px 20px;
+    filter: blur(0.3px);
+}
+
+button.Login {
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid skyblue;
+    background-color: #117496c7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+}
+
+.log {
+    text-decoration: none;
+    color: white;
+}
+
+/* ==== ABOUT SECTION ==== */
+#about {
+    margin-top: 30vh;
+    font-size: clamp(16px, 2vw, 20px);
+    background-image: radial-gradient(black 50%, #117496c7);
+    padding: 5vw;
+    line-height: 1.6;
+    box-shadow: 0px 0px 3px 2px grey;
+}
+
+#about h2 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* ==== ASTRO IMAGE ==== */
+.astro2 {
+    position: absolute;
+    width: 18vw;
+    max-width: 130px;
+    top: calc(120vh - 0vw);
+    left: 5vw;
+    z-index: 10;
+    margin-top: 15vh;
+}
+
+/* ==== EXPLORE ==== */
+.explore h2 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: clamp(24px, 5vw, 40px);
+    background-image: linear-gradient(rgb(19, 103, 131), rgb(16, 16, 88));
+    padding: 20px;
+    color: white;
+}
+
+/* ==== PROFILE GRID ==== */
+#profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0 5vw;
+    color: white;
+}
+
+#profile a {
+    text-decoration: none;
+    color: white;
+}
+
+#profile a:hover {
+    text-shadow: 0 0 2px rgba(255, 149, 0, 0.7);
+}
+
+/* ==== GRID CARD ==== */
+.grid1 {
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 5px grey;
+    text-shadow: 0px 0px 4px white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 20px auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#p1 { background-image: url(./mercuryback.jpg); }
+#p2 { background-image: url(./venusback.jpg); }
+#p3 { background-image: url(./earthback.jpeg); }
+#p4 { background-image: url(./marsback1.jpeg); }
+#p5 { background-image: url(./jupiterback.jpeg); }
+#p6 { background-image: url(./saturnback.jpg); }
+#p7 { background-image: url(./uranusback.jpeg); }
+#p8 { background-image: url(./neptuneback.jpg); }
+
+/* ==== PLANET NAME ==== */
+.planetName {
+    font-size: clamp(20px, 3vw, 30px);
+    text-align: center;
+    background-color: black;
+    width: 250px;
+    margin: auto;
+}
+
+/* ==== FOOTER ==== */
+.footer p {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: clamp(14px, 2vw, 18px);
+    background-image: linear-gradient(rgb(13, 68, 116), rgb(17, 30, 66));
+}
+
+.rocket1 {
+    width: 18rem;
+    height: 18rem;
+    display: block;
+    right: 50px;
+    top: 50vh;
+    left: 80%;
+    position: relative;
+    z-index: 10;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media (max-width: 768px) {
+    nav .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .Title {
+        font-size: clamp(40px, 9vw, 100px);
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .matter {
+        font-size: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    div button {
+        position: relative;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .astro2 {
+        width: 20vw;
+        max-width: 90px;
+        top: calc(100vh - (40vw));
+        left: 3vw;
+    }
+
+    .rocket1 {
+        width: 8rem;
+        height: 8rem;
+        margin-top: 60px;
+        position: absolute;
+        margin-left: 50%;
+    }
+}
